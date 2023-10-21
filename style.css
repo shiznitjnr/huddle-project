@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url(/assets/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover; */
+  background: url(/assets/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* utils */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* nav styling */
+nav img {
+  width: 40%;
+}
+
+nav {
+  padding-top: 2rem;
+}
+
+/* header styling */
+.header {
+  margin-top: 30px;
+  /* height: 29rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header img {
+  max-width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.header-inner h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-inner p {
+  color: rgb(174, 172, 172);
+  width: 94%;
+}
+
+.header-inner button {
+  width: 70%;
+  height: 2rem;
+  margin: auto;
+  border: none;
+  border-radius: 50px;
+  color: hsl(300, 69%, 71%);
+  box-shadow: -1px 1px 5px rgb(70, 68, 68);
+}
+
+/* for desktop design */
+@media (min-width: 1024px) {
+  body {
+    background: url("/assets/bg-desktop.svg") no-repeat hsl(257, 40%, 49%);
+  }
+  /* nav styling */
+
+  nav img {
+    width: 18%;
+
+  /* header styling */
+  }
+  .header {
+    flex-direction: row;
+  }
+  .header img{
+    width: 57%;
+  }
+
+  .header-inner {
+    text-align: start;
+    width: 40%;
+    padding-top: 4%;
+  }
+
+  .header-inner button{
+    margin: 0%;
+    width: 30%;
+    color: hsl(257, 40%, 49%);
+  }
+
+  .header-inner h2{
+    width: 80%;
+    font-size: 2rem;
+
+
+  }
+  .header-inner p{
+    color:rgb(217, 211, 211);
+    line-height: 1.5rem;
+  }
+}

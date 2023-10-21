@@ -57,7 +57,7 @@ header img {
 }
 
 .header-inner p {
-  color: rgb(174, 172, 172);
+  color: rgb(217, 211, 211);
   width: 94%;
 }
 
@@ -85,7 +85,7 @@ header img {
   }
   .header {
     flex-direction: row;
-    
+
   }
   .header img{
     width: 57%;
